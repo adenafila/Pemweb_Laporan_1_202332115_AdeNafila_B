@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!--mendeklarasikan ini dokumen html-->
+<html> <!--elemen yang berisi semua konten-->
+<head>
+    <title>Registrasi Akun</title> <!--judul halaman-->
+</head>
+<body>
+    <h1>Registrasi Akun</h1> <!--judul utama-->
+<form> <!--awalan pembuatan form-->
+    <fieldset> <!--layer/grup form-->
+        <legend>Formulir Registrasi</legend> <!--judul layer form-->
+        <p>
+            <label> Masukkan Nama: </label> <!--label input nama-->
+            <input type="text" name ="nama"
+            placeholder="Ade Nafila" /> <!--input nama dengan placeholder-->
+        </p>
+        <p>
+            <label> Masukkan NIM: </label> <!--label input nim-->
+            <input type="number" name="nim" 
+            placeholder="202332115" /> <!--input nim dg placeholder-->
+        </p>
+        <p> 
+            <label> Masukkan E-Mail: </label> <!--input email-->
+            <input type="email" name="email" 
+            placeholder="ade2332115@itpln.ac.id" /> <!--input email dg placeholder-->
+        </p>
+        <p> 
+            <label> Jenis Kelamin </label> <br> <!--label memilih jenis kelamin (baris baru)-->
+            <label> <input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki </label>
+            <label> <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan </label>   
+        </p>
+        <p>
+            <label> Agama </label> <!--label memilih agama-->
+            <select name="agama"> <!--dropdown pilihan agama-->
+                <option value="islam">Islam</option>
+                <option value="katolik">Katolik</option>
+                <option value="protestan">Protestan</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+                <option value="konghucu">Konghucu</option>
+            </select>
+        </p>
+        <p>
+            <label>Masukkan Password: </label> <!--label input password-->
+            <input type="password" name="password"  
+            placeholder="adecantik123" required /> <!--input pass dg placeholder, required-->
+        </p>
+        <p> 
+            <label>Konfirmasi Password: </label> <!--label konfirmasi password-->
+            <input type="password" name="pass" /> <!--input konfirmasi password-->
+        </p>
+
+        <p>
+        <input type="submit" name="submit" value="Daftar" /> <!--button mengirim form-->
+        </p>
+
+    </fieldset> <!--akhir field-->
+</form> <!--akhir form-->
+</body>
